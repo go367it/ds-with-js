@@ -7,29 +7,19 @@ void arrayRotation(int arr[], int n, int swapNumber)
 {
     int newArray[swapNumber];
 
-    // taking the elements out and storing them in another array
-    for (int i = 0; i < swapNumber; i++)
-    {
-        newArray[i] = arr[i];
-    }
+    // // taking the elements out and storing them in another array
+    // for (int i = 0; i < swapNumber; i++)
+    // {
+    //     newArray[i] = arr[i];
+    // }
 
-    for (int i = 0; i < swapNumber; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            int temp = arr[j];
-            arr[j] = arr[j + 1];
-            arr[j + 1] = temp;
+    for (int i= 1; i<= n; i++){
+        if(i<= swapNumber){
+            int temp = arr[i];
+            arr[i]; // continue
         }
     }
 
-    for (int i = 0; i < swapNumber; i++)
-    {
-        for (int j = n - swapNumber; j < n; j++)
-        {
-            arr[j] = newArray[i];
-        }
-    }
 }
 
 // main function
